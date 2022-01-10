@@ -1,9 +1,9 @@
 [[header]]
-:description: RISC-V Example Specification Document (Zexmpl)
+:description: RISC-V UEFI BOOT PROTOCOL Specification
 :company: RISC-V.org
-:revdate: 1/2022
-:revnumber: 1.0
-:revremark: This document is in development. Assume everything can change. See http://riscv.org/spec-state for details.
+:revdate: 1/10/2022
+:revnumber: 0.1
+:revremark: Draft
 :url-riscv: http://riscv.org
 :doctype: book
 :preface-title: Preamble
@@ -17,7 +17,7 @@
 // needs to be changed? bug discussion started
 //:WaveDromEditorApp: app/wavedrom-editor.app
 :imagesoutdir: images
-:bibtex-file: example.bib
+:bibtex-file: boot_protocol.bib
 :bibtex-order: alphabetical
 :bibtex-style: apa
 :icons: font
@@ -36,11 +36,11 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= RISC-V Example Specification Document (Zexmpl)
-Author 1; Author 2; RISC-V Task Group
+= RISC-V UEFI BOOT PROTOCOL Specification
+Sunil V L; RISC-V Platform HSC Group
 
-include::intro.adoc[]
-include::chapter2.adoc[]
+//include::intro.adoc[]
+include::boot_protocol.adoc[]
 //the index must precede the bibliography
-include::index.adoc[]
-include::bibliography.adoc[]
+//include::index.adoc[]
+include::boot_protocol-bibliography.adoc[]
