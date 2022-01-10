@@ -1,0 +1,6 @@
+[bibliography]
+== References
+
+* link:http://lists.infradead.org/pipermail/linux-riscv/2021-December/010604.html[Discussion on the requirement]
+
+//bibliography::[]

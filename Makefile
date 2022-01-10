@@ -1,5 +1,5 @@
-HEADER_SOURCE := header.adoc
-PDF_RESULT := example-spec.pdf
+HEADER_SOURCE := boot_protocol-header.adoc
+PDF_RESULT := EFI_RISCV_BOOT_PROTOCOL.pdf
 
 all: build
 
@@ -18,4 +18,4 @@ build:
     $(HEADER_SOURCE)
 
 clean:
-	rm example-spec.pdf
+	rm $(PDF_RESULT)
