@@ -1,8 +1,8 @@
 [[header]]
-:description: RISC-V UEFI BOOT PROTOCOL Specification
+:description: RISC-V UEFI PROTOCOL Specification
 :company: RISC-V.org
-:revdate: 1/10/2022
-:revnumber: 0.1
+:revdate: 1/12/2022
+:revnumber: 0.2
 :revremark: Draft
 :url-riscv: http://riscv.org
 :doctype: book
@@ -17,7 +17,7 @@
 // needs to be changed? bug discussion started
 //:WaveDromEditorApp: app/wavedrom-editor.app
 :imagesoutdir: images
-:bibtex-file: boot_protocol.bib
+:bibtex-file: efi_protocol.bib
 :bibtex-order: alphabetical
 :bibtex-style: apa
 :icons: font
@@ -36,11 +36,11 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= RISC-V UEFI BOOT PROTOCOL Specification
+= RISC-V UEFI PROTOCOL Specification
 Sunil V L; RISC-V Platform HSC Group
 
-//include::intro.adoc[]
+include::intro.adoc[]
 include::boot_protocol.adoc[]
 //the index must precede the bibliography
 //include::index.adoc[]
-include::boot_protocol-bibliography.adoc[]
+include::bibliography.adoc[]

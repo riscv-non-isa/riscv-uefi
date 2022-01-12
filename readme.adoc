@@ -1,3 +1,20 @@
-= RISC-V docs-spec-template
+= RISC-V UEFI PROTOCOL Specification
 
-A template for building RISC-V specifications.
+RISC-V Platforms need special UEFI Protocols. The discussion of such
+requirements occurs on the https://lists.riscv.org/g/tech-unixplatformspec[RISC-V Unix Platform Mailing
+list]. It is publicly readable but posting requires being a member of the
+RISC-V Foundation. Any new UEFI Protocol needs to be discussed and approved
+there before being merged. Once approved in RISC-V community, it can be
+added/referenced to the UEFI spec maintained by UEFI forum.
+
+= Licensing
+
+The files in this repository are licensed under the Creative Commons
+Attribution 4.0 International License (CC-BY 4.0).  The full license
+text is available at https://creativecommons.org/licenses/by/4.0/.
+
+= Building Documents
+
+The final specification in form of PDF and HTML can be generated using
+`make` command. The `makefile` internally uses asciidoctor so the packages
+required by the `makefile` need to be installed on the build system.
