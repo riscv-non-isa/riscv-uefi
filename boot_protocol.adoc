@@ -9,9 +9,9 @@ firmware tables.
 One example is the boot hartid on RISC-V systems. On non-UEFI systems, this is
 typically passed as an argument to the kernel (in a0). However, UEFI systems need
 to follow UEFI application calling conventions and hence it can not be passed in
-a0. While there can be a solution using /chosen node in DT based systems to pass
-this information, a simple and common interface across DT and ACPI platforms is
-desired on UEFI platforms to retrieve such information.
+a0. There is an existing solution which uses /chosen node in DT based systems to
+pass this information. However, this solution doesn't work for ACPI based
+systems. Hence, a UEFI protocol is preferred for both DT and ACPI based systems.
 
 This UEFI protocol for RISC-V systems provides early information to the
 bootloaders or Operating Systems. Firmwares like EDK2/u-boot need to implement
