@@ -7,6 +7,7 @@ RISC-V platforms. These protocol specs are maintained by RISC-V community.
 [cols="1,1,3",options="header"]
 |===
 |Date        | Revision    | Change
+|01/13/2022  | 0.3 Draft   | Improved text as per feedback from Atish.
 |01/12/2022  | 0.2 Draft   | 1) Added wrapper EFI_PROTOCOL spec +
                              2) Added protocol revision field directly in
                                 BOOT_PROTOCOL and remove GetProtocolVersion +
