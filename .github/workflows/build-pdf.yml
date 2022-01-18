@@ -54,6 +54,6 @@ jobs:
     - name: Archive PDF result
       uses: actions/upload-artifact@v2
       with:
-        name: EFI_RISCV_PROTOCOL-spec.pdf
-        path: EFI_RISCV_PROTOCOL-spec.pdf
+        name: RISCV_UEFI_PROTOCOL-spec.pdf
+        path: RISCV_UEFI_PROTOCOL-spec.pdf
         retention-days: 7

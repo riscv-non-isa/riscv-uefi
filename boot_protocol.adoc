@@ -1,5 +1,5 @@
 [[boot_protocol]]
-== EFI_RISCV_BOOT_PROTOCOL
+== RISCV_EFI_BOOT_PROTOCOL
 Either Device Tree (DT) or Advanced Configuration and Power Interface (ACPI)
 firmware tables are used to convey the information about hardware to the
 Operating Systems. Some of the information are known only at boot time and
@@ -20,14 +20,14 @@ this protocol on RISC-V UEFI systems.
 This protocol is typically used by the bootloaders before *ExitBootServices()*
 call and pass the information to the Operating Systems.
 
-The version of EFI_RISCV_BOOT_PROTOCOL specified by this specification is
+The version of RISCV_EFI_BOOT_PROTOCOL specified by this specification is
 0x00010000. All future revisions must be backwards compatible. If a new version
 of the specification breaks backwards compatibility, a new GUID must be defined.
 
 === GUID
 [source,C]
 ----
-#define EFI_RISCV_BOOT_PROTOCOL_GUID \
+#define RISCV_EFI_BOOT_PROTOCOL_GUID \
     { 0xccd15fec, 0x6f73, 0x4eec, \
     { 0x83, 0x95, 0x3e, 0x69, 0xe4, 0xb9, 0x40, 0xbf } }
 ----
@@ -35,21 +35,21 @@ of the specification breaks backwards compatibility, a new GUID must be defined.
 === Revision Number
 [source,C]
 ----
-#define EFI_RISCV_BOOT_PROTOCOL_REVISION 0x00010000
-#define EFI_RISCV_BOOT_PROTOCOL_LATEST_VERSION \
-        EFI_RISCV_BOOT_PROTOCOL_REVISION
+#define RISCV_EFI_BOOT_PROTOCOL_REVISION 0x00010000
+#define RISCV_EFI_BOOT_PROTOCOL_LATEST_VERSION \
+        RISCV_EFI_BOOT_PROTOCOL_REVISION
 ----
 
 === Protocol Interface Structure
 [source,C]
 ----
-typedef struct _EFI_RISCV_BOOT_PROTOCOL {
+typedef struct _RISCV_EFI_BOOT_PROTOCOL {
     UINT64                Revision;
     EFI_GET_BOOT_HARTID   GetBootHartId;
-} EFI_RISCV_BOOT_PROTOCOL;
+} RISCV_EFI_BOOT_PROTOCOL;
 ----
 
-==== EFI_RISCV_BOOT_PROTOCOL.GetBootHartId
+==== RISCV_EFI_BOOT_PROTOCOL.GetBootHartId
 This interface provides the hartid of the boot cpu.
 
 ===== Prototype
@@ -57,7 +57,7 @@ This interface provides the hartid of the boot cpu.
 ----
 typedef EFI_STATUS
 (EFIAPI *EFI_GET_BOOT_HARTID) (
-    IN EFI_RISCV_BOOT_PROTOCOL *This,
+    IN RISCV_EFI_BOOT_PROTOCOL *This,
     OUT UINTN                  *BootHartId
     );
 ----
@@ -77,6 +77,6 @@ typedef EFI_STATUS
 |===
 |Return Value             | Description
 | *EFI_SUCCESS*           | The boot hart id could be returned.
-| *EFI_INVALID_PARAMETER* | *This* parameter is NULL or does not point to a valid EFI_RISCV_BOOT_PROTOCOL implementation.
+| *EFI_INVALID_PARAMETER* | *This* parameter is NULL or does not point to a valid RISCV_EFI_BOOT_PROTOCOL implementation.
 | *EFI_INVALID_PARAMETER* | *BootHartId* parameter is NULL.
 |===

@@ -1,5 +1,5 @@
 HEADER_SOURCE := header.adoc
-PDF_RESULT := EFI_RISCV_PROTOCOL-spec.pdf
+PDF_RESULT := RISCV_UEFI_PROTOCOL-spec.pdf
 
 all: build
 
