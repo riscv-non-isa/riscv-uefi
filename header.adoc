@@ -1,9 +1,9 @@
 [[header]]
 :description: RISC-V UEFI PROTOCOL Specification
 :company: RISC-V.org
-:revdate: 1/18/2022
-:revnumber: 1.0-rc1
-:revremark: Frozen
+:revdate: 1/21/2022
+:revnumber: 1.0-rc2
+:revremark: Stable
 :url-riscv: http://riscv.org
 :doctype: book
 :preface-title: Preamble
@@ -38,6 +38,25 @@ endif::[]
 
 = RISC-V UEFI PROTOCOL Specification
 Sunil V L; RISC-V Platform HSC Group
+
+// Preable
+[WARNING]
+.This document is in the link:http://riscv.org/spec-state[Stable state]
+====
+Assume anything could still change, but limited change should be expected.
+====
+
+[preface]
+== Copyright and license information
+This specification is licensed under the Creative Commons 
+Attribution 4.0 International License (CC-BY 4.0). The full 
+license text is available at
+https://creativecommons.org/licenses/by/4.0/.
+
+Copyright 2022 by RISC-V International.
+
+[preface]
+include::contributors.adoc[]
 
 include::intro.adoc[]
 include::boot_protocol.adoc[]
