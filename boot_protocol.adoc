@@ -1,7 +1,7 @@
 [[boot_protocol]]
 == RISCV_EFI_BOOT_PROTOCOL
 Either Device Tree (DT) or Advanced Configuration and Power Interface (ACPI)
-firmware tables are used to convey the information about hardware to the
+configuration tables are used to convey the information about hardware to the
 Operating Systems. Some of the information are known only at boot time and
 needed very early before the Operating Systems/boot loaders can parse the
 firmware tables. 
@@ -9,16 +9,17 @@ firmware tables.
 One example is the boot hartid on RISC-V systems. On non-UEFI systems, this is
 typically passed as an argument to the kernel (in a0). However, UEFI systems need
 to follow UEFI application calling conventions and hence it can not be passed in
-a0. There is an existing solution which uses /chosen node in DT based systems to
-pass this information. However, this solution doesn't work for ACPI based
+a0. There is an existing solution which uses the /chosen node in DT based systems
+to pass this information. However, this solution doesn't work for ACPI based
 systems. Hence, a UEFI protocol is preferred for both DT and ACPI based systems.
 
 This UEFI protocol for RISC-V systems provides early information to the
-bootloaders or Operating Systems. Firmwares like EDK2/u-boot need to implement
-this protocol on RISC-V UEFI systems.
+bootloaders or Operating Systems. Firmwares like EDK2 and u-boot need to
+implement this protocol on RISC-V UEFI systems.
 
-This protocol is typically used by the bootloaders before *ExitBootServices()*
-call and pass the information to the Operating Systems.
+This protocol is typically called by the bootloaders before invoking
+*ExitBootServices()*. They then pass the information to the Operating
+Systems.
 
 The version of RISCV_EFI_BOOT_PROTOCOL specified by this specification is
 0x00010000. All future revisions must be backwards compatible. If a new version
