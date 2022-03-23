@@ -1,9 +1,9 @@
 [[header]]
 :description: RISC-V UEFI PROTOCOL Specification
 :company: RISC-V.org
-:revdate: 1/21/2022
-:revnumber: 1.0-rc2
-:revremark: Stable
+:revdate: 03/22/2022
+:revnumber: 1.0-rc3
+:revremark: Frozen
 :url-riscv: http://riscv.org
 :doctype: book
 :preface-title: Preamble
@@ -37,13 +37,16 @@ endif::[]
 :xrefstyle: short
 
 = RISC-V UEFI PROTOCOL Specification
-Sunil V L; RISC-V Platform HSC Group
+RISC-V Platform HSC Group
 
 // Preable
 [WARNING]
-.This document is in the link:http://riscv.org/spec-state[Stable state]
+.This document is in the link:http://riscv.org/spec-state[Frozen state]
 ====
-Assume anything could still change, but limited change should be expected.
+Change is extremely unlikely. A high threshold will be used, and a change will
+only occur because of some truly critical issue being identified during the
+public review cycle. Any other desired or needed changes can be the subject of
+a follow-on new extension.
 ====
 
 [preface]
