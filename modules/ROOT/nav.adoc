@@ -1,0 +1,7 @@
+.RISC-V UEFI PROTOCOL Specification
+* xref:index.adoc[RISC-V UEFI PROTOCOL Specification]
+* xref:contributors.adoc[Contributors]
+* xref:intro.adoc[Introduction]
+* xref:boot_protocol.adoc[RISCV_EFI_BOOT_PROTOCOL]
+* xref:bibliography.adoc[Bibliography]
+
