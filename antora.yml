@@ -1,5 +1,5 @@
 name: uefi
-title: RISC-V UEFI PROTOCOL Specification
+title: UEFI PROTOCOL
 version: v1.0.0
 nav:
 - modules/ROOT/nav.adoc
