@@ -21,7 +21,7 @@ jobs:
       NPM_PACKAGE_FOLDER: ${{ github.workspace }}/dependencies
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
       with:
         submodules: 'true'
     - name: Install Ubuntu packages
@@ -52,7 +52,7 @@ jobs:
         PATH=${PATH}:${BUNDLE_BIN}:$(npm bin) \
         make
     - name: Archive PDF result
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v6
       with:
         name: RISCV_UEFI_PROTOCOL-spec.pdf
         path: RISCV_UEFI_PROTOCOL-spec.pdf
