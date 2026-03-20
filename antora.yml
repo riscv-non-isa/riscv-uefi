@@ -6,6 +6,8 @@ nav:
 
 asciidoc:
   attributes:
+    page-group: platform-software
+    page-card-description: 'UEFI requirements and conventions for RISC-V systems.'
+    page-release-date: 'May 2022'
     page-pdf_url: _attachments/RISCV_UEFI_PROTOCOL-spec.pdf
     more_details_url: https://riscv.atlassian.net/wiki/external/NDEzOThmNmRjZmZhNDdhNzgxYmYwOWRmMTRkOTBlMTE
-    page-group: platform-software
