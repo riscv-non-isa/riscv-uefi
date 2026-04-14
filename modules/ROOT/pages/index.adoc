@@ -4,7 +4,7 @@ image::common::risc-v_logo.svg[id="riscvlogo"xs,alt="RISCV"]
 
 
 [.space-below]
-== UEFI PROTOCOL
+== RISC-V UEFI PROTOCOL Specification
 
 Authors: Iain Robertson
 
