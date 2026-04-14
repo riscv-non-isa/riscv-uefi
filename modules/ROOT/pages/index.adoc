@@ -1,6 +1,10 @@
-image::risc-v_logo.svg[]
+[.space-below]
+image::common::risc-v_logo.svg[id="riscvlogo"xs,alt="RISCV"]
 
-== Unformatted Trace & Diagnostic Data Packet Encapsulation for RISC-V
+
+
+[.space-below]
+== UEFI PROTOCOL
 
 Authors: Iain Robertson
 
