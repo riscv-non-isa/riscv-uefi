@@ -6,7 +6,7 @@ nav:
 
 asciidoc:
     attributes:
-      page-card-description: 'Unformatted Trace & Diagnostic Data Packet Encapsulation.'
+      page-card-description: 'Defines a software interface between an operating system and platform firmware.'
       page-release-date: 'July 2024'
       page-pdf_url: _attachments/RISCV_UEFI_PROTOCOL-spec.pdf
       more_details_url: https://riscv.atlassian.net/wiki/external/NDEzOThmNmRjZmZhNDdhNzgxYmYwOWRmMTRkOTBlMTE
