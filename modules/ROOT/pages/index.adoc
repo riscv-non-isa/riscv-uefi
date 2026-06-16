@@ -6,9 +6,9 @@ image::common::risc-v_logo.svg[id="riscvlogo"xs,alt="RISCV"]
 [.space-below]
 == RISC-V UEFI PROTOCOL Specification
 
-Authors: Iain Robertson
+RISC-V Platform HSC Group
 
-Version v1.0, 2024-07-05: Ratified
+Version 1.0.0, 05/09/2022: Ratified
 
 
 // Preable
